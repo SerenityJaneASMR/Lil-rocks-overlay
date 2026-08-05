@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Rocks Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="overlay">
+
+    <!-- Rocks -->
+    <img id="rocks" src="assets/rocks.png">
+
+    <!-- Jar -->
+    <div id="jar">
+
+        <!-- Liquid -->
+        <div id="liquid">
+
+            <!-- Animated Surface -->
+            <svg id="surface"
+                 viewBox="0 0 120 20"
+                 preserveAspectRatio="none">
+
+                <path id="wavePath"
+                    d="M0,10
+                       C10,6 20,14 30,10
+                       S50,6 60,10
+                       S80,14 90,10
+                       S110,6 120,10
+                       L120,20
+                       L0,20
+                       Z">
+
+                    <animate
+                        attributeName="d"
+                        dur="1.2s"
+                        repeatCount="indefinite"
+                        values="
+M0,10 C10,6 20,14 30,10 S50,6 60,10 S80,14 90,10 S110,6 120,10 L120,20 L0,20 Z;
+M0,10 C10,14 20,6 30,10 S50,14 60,10 S80,6 90,10 S110,14 120,10 L120,20 L0,20 Z;
+M0,10 C10,6 20,14 30,10 S50,6 60,10 S80,14 90,10 S110,6 120,10 L120,20 L0,20 Z" />
+
+                </path>
+
+            </svg>
+
+            <!-- Bubbles -->
+            <div class="bubble b1"></div>
+            <div class="bubble b2"></div>
+            <div class="bubble b3"></div>
+            <div class="bubble b4"></div>
+            <div class="bubble b5"></div>
+
+        </div>
+
+        <!-- Jar Front -->
+        <img id="jarImage" src="assets/jar_front.png">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
