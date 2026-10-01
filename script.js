@@ -12,7 +12,7 @@ function updateJar(progress) {
     liquid.style.height = fill + "%";
 
 }
-updateJar(50);     // Empty
+updateJar(0);     // Empty
 // updateJar(25);
 // updateJar(50);
 // updateJar(75);
